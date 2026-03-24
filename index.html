@@ -4,36 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo CSS</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        /* Seletor de elemento */
+        p {
+            color: black;
+        }
+
+        /* Seletor de classe */
+        .classe-exemplo {
+            color: purple;
+        }
+
+        /* Seletor de ID */
+        #id-exemplo {
+            color: red;
+        }
+
+        /* Seletor descendente */
+        div p {
+            color: brown;
+        }
+
+        /* Seletor de atributo */
+        input[type="text"] {
+            padding: 5px;
+            border: 2px solid blue;
+        }
+
+        .destaque {
+            background-color: lightgray;
+        }
+
+        .caixa {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
 </head>
-  <body style="font-family: Arial; margin: 20px">
-    <h1 style="color: darkblue">Guia de CSS</h1>
+<body>
 
-    <p style="color: black">
-      CSS (Cascading Style Sheets) é usado para estilizar páginas web.
+    <h1>Guia de CSS</h1>
+
+    <p>
+        CSS (Cascading Style Sheets) é usado para estilizar páginas web.
     </p>
 
-    <h2 style="color: green">5 Seletores CSS</h2>
+    <h2>5 Seletores CSS</h2>
 
-    <p style="background-color: lightgray">
-      Seletor de elemento: estiliza todas as tags iguais.
+    <p class="destaque">
+        Seletor de elemento: estiliza todas as tags iguais.
     </p>
 
-    <p class="classe-exemplo" style="color: purple">
-      Seletor de classe: usa .nomeClasse
+    <p class="classe-exemplo">
+        Seletor de classe: usa .nomeClasse
     </p>
 
-    <p id="id-exemplo" style="color: red">Seletor de ID: usa #nomeID</p>
+    <p id="id-exemplo">
+        Seletor de ID: usa #nomeID
+    </p>
 
-    <div style="border: 1px solid black; padding: 10px">
-      <p style="color: brown">
-        Seletor descendente: estiliza elementos dentro de outros
-      </p>
+    <div class="caixa">
+        <p>
+            Seletor descendente: estiliza elementos dentro de outros
+        </p>
     </div>
 
-    <input
-      type="text"
-      placeholder="Digite algo"
-      style="padding: 5px; border: 2px solid blue"
-    />
-  </body>
+    <input type="text" placeholder="Digite algo">
+
+</body>
 </html>
